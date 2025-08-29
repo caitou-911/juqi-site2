@@ -1,5 +1,6 @@
 /* Base */
 body {
+  margin: 0;
   line-height: 1.7;
   color: #4d4d4d;
   font-weight: 400;
@@ -216,7 +217,7 @@ a:hover {
   left: 0;
 }
 .bg-image.overlay:before {
-  background: rgba(0, 0, 0, 0.4);
+  /* background: rgba(0, 0, 0, 0.4); */
 }
 .bg-image.overlay-primary:before {
   background: rgba(242, 58, 46, 0.9);
