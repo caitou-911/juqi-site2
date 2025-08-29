@@ -36,6 +36,34 @@
         aspect-ratio: 1 / 1;
         background: #fff;
       }
+
+      /* 内页横幅通用：保持全宽与 cover（桌面端） */
+      .site-blocks-cover.inner-page {
+        width: 100% !important;
+        display: block;
+        padding: 0 !important;
+        margin: 0 !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+      }
+
+      /* 移动端强制完整显示与全宽铺满 */
+      @media (max-width: 767.98px) {
+        .site-blocks-cover.inner-page.bg-image,
+        .site-blocks-cover.inner-page.bg-image .row {
+          min-height: 260px !important;
+          height: auto !important;
+        }
+        .site-blocks-cover.inner-page.bg-image {
+          width: 100% !important;
+          margin: 0 !important;
+          background-size: contain !important; /* 完整显示图片 */
+          background-position: center top !important;
+          background-repeat: no-repeat !important;
+          background-attachment: scroll !important;
+        }
+      }
     </style>
   </head>
   <body>
@@ -166,8 +194,8 @@
 
       <!-- 内页横幅（About Banner） 使用 images/hero_bg_2.jpg | 建议：1900 × 1267 px，JPG ≤ 300KB，背景 cover -->
       <div
-        class="site-blocks-cover inner-page overlay"
-        style="background-image: url(images/banner/banner2.png)"
+        class="site-blocks-cover inner-page overlay bg-image"
+        style="background-image: url('images/banner/banner2.png')"
         data-aos="fade"
         data-stellar-background-ratio="0.5"
       ></div>
