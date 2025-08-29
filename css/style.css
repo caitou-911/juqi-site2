@@ -869,7 +869,7 @@ a:hover {
 }
 @media (min-width: 1200px) {
   .site-block-half .text {
-    padding: 8rem;
+    padding: 6rem;
   }
 }
 
@@ -878,40 +878,14 @@ a:hover {
 }
 @media (max-width: 991.98px) {
   .site-block-half .bg-image {
-    height: 400px;
+    /* height: 400px; */
   }
 }
 
 .site-block-half.site-block-video .image {
   position: relative;
 }
-.site-block-half.site-block-video .image .play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  width: 70px;
-  height: 70px;
-  background: #fff;
-  display: block;
-  border-radius: 50%;
-  opacity: 1;
-  color: #f23a2e !important;
-}
-.site-block-half.site-block-video .image .play-button:hover {
-  opacity: 1;
-}
-.site-block-half.site-block-video .image .play-button > span {
-  position: absolute;
-  left: 55%;
-  top: 50%;
-  -webkit-transform: translate(-60%, -50%);
-  -ms-transform: translate(-60%, -50%);
-  transform: translate(-60%, -50%);
-}
+
 
 .site-block-testimony img {
   max-width: 140px;
@@ -1699,7 +1673,6 @@ img.icon1 {
   }
 }
 .baseMap {
-  background: palegoldenrod;
   width: 80%;
 }
 .site-block-video .image {
